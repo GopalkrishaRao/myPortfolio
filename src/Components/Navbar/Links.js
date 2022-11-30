@@ -1,5 +1,5 @@
 export default function Links() {
   return (
-    <div>Links</div>
+    <h1>Links</h1>
   )
 }
