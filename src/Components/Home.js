@@ -3,7 +3,7 @@ export default function Home() {
     <>
     <div>
       <h1>Gopalkrishna Rao</h1>
-      <img hraf=""  alt="profile_pic"/>
+      <img src={require("../images/gk.png")}  alt="profile_pic" className="rounded-[50%] h-72 w-72"/>
     </div>
     <div>
         <h1>About</h1>
