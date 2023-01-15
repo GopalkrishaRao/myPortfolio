@@ -15,9 +15,6 @@ export default function Navbar() {
             <Link to={"/"} className="ul">Home</Link>
           </li>
           <li>
-            <Link to={"/links"} className="ul">Links</Link>
-          </li>
-          <li>
             <Link to={"/about"} className="ul">About</Link>
           </li>
           <li>
@@ -34,9 +31,6 @@ export default function Navbar() {
       <ul className="menu menu-horizontal p-0">
         <li>
           <Link to={"/"} className="ul">Home</Link>
-        </li>
-        <li>
-          <Link to={"/links"} className="ul">Links</Link>
         </li>
         <li>
           <Link to={"/about"} className="ul">About</Link>
