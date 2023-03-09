@@ -3,28 +3,31 @@ import React from 'react'
 
 export default function ProjectCard(props) {
     return (
-      <div className="card w-96 bg-base-100 shadow-xl">
-        
-        {/* <figure>
-          <img src={require(`${props.srcImg}`).default} alt="Image" />
-        </figure> */}
-        <div className="card-body">
-          <h2 className="card-title">
-            {props.Title}
-            
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <a hraf='https://github.com/GopalkrishaRao' target={'_blank'}>
-            Click
+      <div className="card w-96 bg-base-100 shadow-xl ">
+         <div className="card">
+      <img src={props.image} alt={props.title} className='h-[280px]' />
+      <div className="card-body">
+        <h3 className="card-title">
+          <a target={'_blank'} href={props.link} className= 'cursor-pointer'>
+            {props.title}
           </a>
-          <div className="card-actions justify-end">
-            <div>
-              <h1>Technologies used</h1>
-              <div className="badge badge-outline">HTML</div> 
-              <div className="badge badge-outline">CSS</div>
-            </div>
-          </div>
-        </div>
+        </h3>
+        <p className="card-text">{props.description}</p>
+        <div className='flex justify-between'>
+        <button>
+          <a target={'_blank'} href={props.link} className= 'cursor-pointer'> 
+          Deployed Link
+          </a>
+        </button>
+        <button> 
+          <a target={'_blank'} href={props.git_hub_link} className= 'cursor-pointer'>
+            Source Code 
+          </a>
+        </button>
+      </div>
+      </div>
+      
+    </div>
       </div>
     );
   }
