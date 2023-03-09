@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <>
 
-    <div>
+    <div id="projects">
     <div className="mx-[60px] flex gap-5 justify-around flex-wrap " >
       {/* 01 Snake */}
       <ProjectCard  
@@ -33,21 +33,21 @@ export default function Projects() {
         title= 'Rode Clone'
         link = 'https://lcproject-rodeclone.netlify.app/'
         image={require("../../images/projects/Rode.jpg")} 
-        description=''
+        description='Clone of rode.com made with HTML and tailwind CSS.'
         git_hub_link='https://github.com/GopalkrishaRao/WebDev/tree/main/TailWind_Projects/Rode_clone'/>
         {/* 05 */}
       <ProjectCard  
         title= 'Shopify Clone'
         link = 'https://lcproject-shopifyclone.netlify.app/'
         image={require("../../images/projects/Shopify.jpg")} 
-        description=''
+        description='Clone of shopify.in made with HTML and tailwind CSS.'
         git_hub_link='https://github.com/GopalkrishaRao/WebDev/tree/main/TailWind_Projects/shofify_clone'/>
         {/* 06 */}
       <ProjectCard  
         title= 'Paytm Clone'
         link = 'https://lcproject-paytmclone.netlify.app/'
         image={require("../../images/projects/Paytm.jpg")} 
-        description=''
+        description='Clone of paytm.com made with HTML and tailwind CSS.'
         git_hub_link='https://github.com/GopalkrishaRao/WebDev/tree/main/TailWind_Projects/Paytm-clone'/>
     </div>
     </div>

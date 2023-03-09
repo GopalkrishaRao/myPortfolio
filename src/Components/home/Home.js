@@ -1,9 +1,11 @@
 import './home.css';
+import Projects from '../projects/Projects'
+
 
 export default function Home() {
   return (
     <>
-  <div className="hero min-h-screen bg-base-200">
+  <div className="hero min-h-screen bg-base-200" id='home'>
   <div className=" hero-content flex-col lg:flex-row-reverse">
     <div className='image-container'>
     <img src={require("../../images/gk.png")} className="profile_pic max-w-sm rounded-[50%] shadow-2xl " />
