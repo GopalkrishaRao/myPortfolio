@@ -3,7 +3,9 @@ export default function Contact() {
 
   return (
     <>
-    <div className='btnimg h-[400px] w-[400px] ' id='contact'>
+     <div className="blank_container  h-[100px] lg:h-[70px]" id='contact'>
+    </div>
+    <div className='btnimg h-[400px] w-[400px] ' >
         <img src={require("../../images/gk.png")}/>
     </div>
       <div>Contact Informaton</div>

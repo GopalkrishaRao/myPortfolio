@@ -4,8 +4,9 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   return (
     <>
-
-    <div id="projects">
+    <div className="blank_container   h-[100px] lg:h-[70px]" id="projects">
+    </div>
+    <div >
     <div className="mx-[60px] flex gap-5 justify-around flex-wrap " >
       {/* 01 Snake */}
       <ProjectCard  

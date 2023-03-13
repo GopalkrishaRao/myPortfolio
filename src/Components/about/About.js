@@ -1,7 +1,9 @@
 export default function About() {
   return (
     <>
-    <div id="about">About</div>
+     <div className="blank_container  h-[100px] lg:h-[70px]" id="about">
+    </div>
+    <div >About</div>
     </>
   )
 }
