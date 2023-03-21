@@ -1,9 +1,10 @@
 import './App.css';
-import Home from './Components/home/Home';
-import About from './Components/about/About';
-import Navbar from './Components/navbar/Navbar';
-import Projects from './Components/projects/Projects';
-import Contact from './Components/contact/Contact';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Navbar from './components/navbar/Navbar';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Foooter from './components/footer/Foooter';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Projects/>
     <About/>
     <Contact/>
+    <Foooter/>
     </>
   );
 }
