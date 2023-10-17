@@ -1,20 +1,10 @@
 import './App.css';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Navbar from './components/navbar/Navbar';
-import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
-import Foooter from './components/footer/Foooter';
+import Navbar from "./components/ui_components/global_components/Navbar";
 
 function App() {
   return (
     <>
     <Navbar/>
-    <Home/>
-    <Projects/>
-    <About/>
-    <Contact/>
-    <Foooter/>
     </>
   );
 }
