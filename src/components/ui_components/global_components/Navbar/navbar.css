@@ -1,0 +1,69 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
+    position: relative; /* Add this line to allow absolute positioning of the underline */
+}
+
+.navbar a::after {
+    content: ''; /* Create an empty pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Make the underline span the full width of the link */
+    height: 2px; /* Set the height of the underline */
+    background-color: #ffffff; /* Set the color of the underline */
+    transform: scaleX(0); /* Initially, the underline has no width (invisible) */
+    transition: transform 0.3s ease; /* Add a transition effect for smooth animation */
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1); /* On hover, expand the underline to full width */
+}
+
+.navbar .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .navbar-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #000000;
+        width: 200px;
+    }
+
+    .navbar .navbar-right.show {
+        display: flex;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .navbar a.menu-icon i {
+        color: #ffffff;
+        font-size: 24px;
+    }
+}

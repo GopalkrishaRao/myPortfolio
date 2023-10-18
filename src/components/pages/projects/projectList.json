@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "type":"game",
+        "title":"",
+        "image":"",
+        "description":"",
+        "url":"",
+        "gir_repo_link":""},
+    {
+        "id":2,
+        "type":"webPage",
+        "title":"",
+        "image":"",
+        "description":"",
+        "url":"",
+        "gir_repo_link":""},
+    {
+        "id":3,
+        "type":"webApp",
+        "title":"",
+        "image":"",
+        "description":"",
+        "url":"",
+        "gir_repo_link":""} 
+]
