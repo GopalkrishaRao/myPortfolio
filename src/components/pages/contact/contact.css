@@ -1,0 +1,169 @@
+contact.css
+
+/* Tailwind CSS styles */
+.blank-container {
+    height: 100px;
+    width: 100%;
+  }
+  
+  .btnimg {
+    --border-radius: 24px;
+    --border-width: 8px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .btnimg::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+  
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+      #488cfb,
+      #29dbbc,
+      #ddf505,
+      #ff9f0e,
+      #e440bb,
+      #655adc,
+      #488cfb
+    );
+  
+    mask-image: var(--m-i), var(--m-i);
+    mask-origin: var(--m-o);
+    mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  
+    filter: hue-rotate(0);
+    animation: hue linear 500ms infinite;
+    animation-play-state: paused;
+  }
+  
+  .btnimg:hover::after {
+    animation-play-state: running;
+  }
+  
+  @keyframes hue {
+    to {
+      filter: hue-rotate(1turn);
+    }
+  }
+  
+  /* Vanilla CSS styles */
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info {
+    text-align: center;
+    color: #000;
+  }
+  
+  .contact-info h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info span {
+    font-weight: bold;
+    color: #488cfb;
+  }
+  
+  .contact-info a {
+    color: #488cfb;
+    text-decoration: none;
+  }
+  
+
+  /* home.css */
+
+/* Equivalent plain CSS for Tailwind classes */
+
+/* Styles for the hero section */
+.hero {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Styles for the hero content */
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Styles for the profile picture */
+  .profile-pic {
+    max-width: 100%;
+    width: 200px; /* Set your desired width */
+    height: auto;
+    border: 2px solid #fff;
+    background: #1f1f1f;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for the pulse animation */
+  .image-container:hover::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  
+  /* Styles for the heading */
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for the paragraph */
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; /* Set your desired text color */
+    max-width: 400px; /* Set your desired max-width */
+  }
+  

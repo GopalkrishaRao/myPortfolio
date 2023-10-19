@@ -1,0 +1,30 @@
+.about_page{
+    margin: 5%;
+}
+
+.about_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+}
+
+.profile_photo{
+    
+}
+
+@media screen and (max-width:720px){
+
+    
+}
+
+@media screen and (max-width:520px){
+    .about_container{
+        flex-direction: column-reverse;
+    }
+    
+}
+

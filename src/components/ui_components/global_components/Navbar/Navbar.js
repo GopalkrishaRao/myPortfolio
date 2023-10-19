@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <a href="home" className="navbar-title">Rao</a>
+                <div className="navbar-title">Rao</div>
             </div>
             <div className={`navbar-right ${showMenu ? 'show' : ''}`}>
                 <Link to={"/"}>Home</Link>
