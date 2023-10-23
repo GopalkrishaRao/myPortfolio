@@ -2,11 +2,11 @@
     {
         "id":1,
         "type":"game",
-        "title":"",
+        "title":"Snake",
         "image":"",
-        "description":"",
-        "url":"",
-        "gir_repo_link":""},
+        "description":"Simple snake game developed with veinlla JavaScript",
+        "url":"https://snake-game-js-gk.netlify.app/",
+        "gir_repo_link":"https://github.com/GopalkrishaRao/PracticeProjects/tree/main/JavaScript/Snake_game_JavaScript"},
     {
         "id":2,
         "type":"webPage",
@@ -22,5 +22,21 @@
         "image":"",
         "description":"",
         "url":"",
-        "gir_repo_link":""} 
+        "gir_repo_link":""},
+    {
+        "id":4,
+        "type":"game",
+        "title":"Pong",
+        "image":"{require(../../images/projects/Pong.jpg)}",
+        "description":"Pong game developed with veinlla JavaScript",
+        "url":"https://pong-js-gk.netlify.app/",
+        "gir_repo_link":"https://github.com/GopalkrishaRao/PracticeProjects/tree/main/JavaScript/Snake_game_JavaScript"},
+    {
+        "id":5,
+        "type":"webApp",
+        "title":"Tic-Tac-Toe",
+        "image":"",
+        "description":"https://tic-tac-toe-js-gk.netlify.app",
+        "url":"",
+        "gir_repo_link":""}
 ]

@@ -9,6 +9,7 @@ import Projects from './components/pages/projects/Projects';
 import About from './components/pages/about/About';
 import Contact from './components/pages/contact/Contact';
 import Error from './components/pages/services/error/Error';
+import Footer from './components/ui_components/global_components/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route exact path='/contact' element={<Contact/>}/>
       <Route  path="*" element={<Error/>}/>
     </Routes>
+    <Footer/>
     </>
   );
 }
