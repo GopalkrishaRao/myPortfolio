@@ -1,33 +1,24 @@
+.pojects_header{
+  
+}
 
+.pojects_title{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-  /* ... (previous CSS styles) ... */
+.my_projects_list{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 40px;  
+}
 
-/* Apply transition and initial position to menu items */
-.navbar .navbar-right {
-    display: none;
+@media screen and (max-width:760px) {
+  .my_projects_list{
+    display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 70px; /* Adjust the top position to create a uniform distance between the menu and close button */
-    right: -200px; /* Initially position the menu off-screen to the right */
-    background-color: #000000;
-    width: 200px;
-    height: 100vh;
-    transition: right 0.5s ease, transform 0.5s ease; /* Add transition to both right and transform properties */
-    z-index: 999; /* Ensure the menu appears above other elements */
+    align-items: center;
   }
   
-  /* Show the menu items when .show class is added */
-  .navbar .navbar-right.show {
-    right: 0; /* Move the menu items to the correct position immediately */
-    transform: translateX(0); /* Reset transform to 0 for smooth slide-in effect */
-  }
-  
-  /* Ensure close button is clickable even before the menu fully appears */
-  .navbar .menu-icon {
-    position: fixed;
-    top: 20px; /* Adjust the top position of the close button to match the menu's top position */
-    right: 20px;
-    z-index: 1000; /* Ensure the close button appears above the menu */
-  }
-  
-  
+}

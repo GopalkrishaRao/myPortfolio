@@ -1,0 +1,45 @@
+.p_card{
+    border: 2px solid #000000;
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 460px;
+}
+
+.p_card_explaination{
+  text-align: justify;
+}
+
+.p_card_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.p_card_buttons>button{
+    min-width: 180px;
+}
+
+.p_card_buttons>button>a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fa_icon{
+    font-size: 25px;
+}
+
+@media screen and (max-width:520px) {
+    .p_card_buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+}

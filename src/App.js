@@ -1,6 +1,8 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
+import {FiChevronsUp} from 'react-icons/fi'
+
 import Navbar from "./components/ui_components/global_components/Navbar/Navbar";
 
 import Home from './components/pages/home/Home';
@@ -14,7 +16,9 @@ import Footer from './components/ui_components/global_components/Footer/Footer';
 function App() {
   return (
     <>
+
     <Navbar/>
+    <div className='app'>
     <Routes>
       <Route exact path='/' element={<Home/>}/>
       {/* <Route path='/services' element={<Service/>}/> */}
@@ -23,6 +27,11 @@ function App() {
       <Route exact path='/contact' element={<Contact/>}/>
       <Route  path="*" element={<Error/>}/>
     </Routes>
+    </div>
+    <div className='btn-top'>
+        <FiChevronsUp className='move_top'/>
+        {/* <p>Top</p> */}
+    </div>
     <Footer/>
     </>
   );
