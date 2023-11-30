@@ -32,7 +32,7 @@ function App() {
         <FiChevronsUp className='move_top'/>
         {/* <p>Top</p> */}
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }

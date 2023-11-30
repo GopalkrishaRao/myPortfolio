@@ -1,6 +1,8 @@
 import React from 'react';
 import './project.css'
-import Projectcard from '../../ui_components/project_card/Projectcard'
+import pojrectList from './projectList.json';
+
+import Projectcard from '../../ui_components/project_card/Projectcard';
 
 export default function Projects() {
   return (
@@ -14,10 +16,19 @@ export default function Projects() {
       </div> */}
     </div>
     <div className='my_projects_list'>
-        <Projectcard title={"abc"} content={"testContent"}/>
-        <Projectcard title={"def"}/>
-        
+       {pojrectList.map((project)=>{
+        return(
+          <Projectcard 
+          key={project.id}
+          card_title={project.title}
+          card_image={project.image}
+          card_content={project.description}
+          dep_link={project.url}
+          git_repo_link={project.gir_repo_link}
+          />
+          )
+       })}
     </div>
     </>
   )
-}
+};

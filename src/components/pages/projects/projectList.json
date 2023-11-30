@@ -3,7 +3,7 @@
         "id":1,
         "type":"game",
         "title":"Snake",
-        "image":"",
+        "image":"require(../../resources/images/projects/snake.jpg)",
         "description":"Simple snake game developed with veinlla JavaScript",
         "url":"https://snake-game-js-gk.netlify.app/",
         "gir_repo_link":"https://github.com/GopalkrishaRao/PracticeProjects/tree/main/JavaScript/Snake_game_JavaScript"},

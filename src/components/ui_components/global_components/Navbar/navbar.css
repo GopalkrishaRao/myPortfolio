@@ -1,82 +1,103 @@
 .navbar {
-    background-color: #000000;
-    overflow: hidden;
-    padding: 16px 6%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 900;
-  }
-  
-  .navbar a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 14px 16px;
-    display: inline-block;
-    position: relative; /* Add this line to allow absolute positioning of the underline */
-  }
-  
-  .navbar a::after {
-    content: ""; /* Create an empty pseudo-element */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Make the underline span the full width of the link */
-    height: 2px; /* Set the height of the underline */
-    background-color: #ffffff; /* Set the color of the underline */
-    transform: scaleX(0); /* Initially, the underline has no width (invisible) */
-    transition: transform 0.3s ease; /* Add a transition effect for smooth animation */
-  }
-  
-  .navbar a:hover::after {
-    transform: scaleX(1); /* On hover, expand the underline to full width */
-  }
-  
-  .navbar .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .navbar-title {
-    color: #ffffff;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .navbar .navbar-right {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: #000000;
-      width: 200px;
-    }
-  
-    .navbar .navbar-right.show {
-      display: flex;
-    }
-  
-    .navbar .menu-icon {
-      display: block;
-    }
-  
-    .navbar a.menu-icon i {
-      color: #ffffff;
-      font-size: 24px;
-    }
-  }
-  
-  .icon{
-    color: #ffffff;
-    font-size: 32px;
-  }
+  background-color: #000000;
+  overflow: hidden;
+  padding: 16px 6%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 16px;
+  display: inline-block;
+  position: relative; /* Add this line to allow absolute positioning of the underline */
+}
+
+.navbar a::after {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Make the underline span the full width of the link */
+  height: 2px; /* Set the height of the underline */
+  background-color: #ffffff; /* Set the color of the underline */
+  transform: scaleX(0); /* Initially, the underline has no width (invisible) */
+  transition: transform 0.3s ease; /* Add a transition effect for smooth animation */
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1); /* On hover, expand the underline to full width */
+}
+
+.navbar-title {
+  color: #ffffff;
+}
+
+.hamberger{
+  display: none;
+}
+
+.hambergerOpen , .hambergerClose{
+  color: #ffffff;
+}
 
 
+@media screen and (max-width: 768px){
+ .hamberger{
+     display: block;
+ } 
 
+ .navbar-right{
+  display: none;
+ }
 
+}
+
+/* hambergermenu css */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
