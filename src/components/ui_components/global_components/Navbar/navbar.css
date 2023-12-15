@@ -57,6 +57,20 @@
   color: #ffffff;
 }
 
+.hambergerMenuIcon{
+  cursor: pointer;
+  font-size: 32px;
+}
+
+.hambergerCloseBtn{
+  margin-left: 40px;
+  font-size: 26px;
+}
+
+.hambergerOpenBtn{
+  font-size: 30px;
+
+}
 
 @media screen and (max-width: 768px){
  .hamberger{
@@ -80,11 +94,12 @@
   background-color: #000000;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 20px;
+  padding-top: 40px;
+  /* padding-left: 40px; */
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 60px;
   text-decoration: none;
   /* font-size: 25px; */
   color: #818181;
@@ -104,6 +119,8 @@
   margin-right: 50px;
 }
 
+
+
 #main {
   transition: margin-right .5s;
   padding: 16px;
@@ -113,3 +130,5 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+

@@ -15,7 +15,6 @@ const handleScroll = ()=>{
     
   } else {
     document.getElementById('navbar').style.top = '-250px';
-    // document.getElementById('navbar').style.transition="top 0.4s ease"
   }
   setPrevScrollpos(currentScrollPos);
 };
@@ -29,9 +28,8 @@ window.addEventListener('scroll', handleScroll);
 },[prevScrollpos])
 
 
-
     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "200px";
         // document.getElementById("main").style.marginRight = "250px";
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
       }
@@ -61,16 +59,16 @@ window.addEventListener('scroll', handleScroll);
     <div className='hamberger'>
     <div id="mySidenav" className="sidenav ">
         <span  className="hambergerClose" onClick={closeNav}>
-            <FaTimes/>
+            <FaTimes className='hambergerCloseBtn hambergerMenuIcon'/>
         </span>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/projects"}>Projects</Link>
-                <Link to={"/about"}>About</Link>
-                <Link to={"/contact"}>Contact</Link>
+                <Link to={"/"} onClick={closeNav}>Home</Link>
+                <Link to={"/projects"}onClick={closeNav}>Projects</Link>
+                <Link to={"/about"} onClick={closeNav}>About</Link>
+                <Link to={"/contact"} onClick={closeNav}>Contact</Link>
     </div>
     <div id="main">
         <span  className= 'hambergerOpen' onClick={openNav}>
-            < FaBars/>
+            < FaBars className=' hambergerOpenBtn hambergerMenuIcon'/>
         </span>
     </div>
     </div>

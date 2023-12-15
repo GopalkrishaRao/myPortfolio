@@ -12,7 +12,7 @@ export default function About() {
           Gopalkrishna Rao
         </h1>
         <p>
-          I am a passionate web developer, specialized in crafting elegaging and responsive websites using the latest technologies and best practices.
+          A passionate web developer, specialized in crafting elegaging and responsive websites using the latest technologies and best practices.
         </p>
       </div>
 
