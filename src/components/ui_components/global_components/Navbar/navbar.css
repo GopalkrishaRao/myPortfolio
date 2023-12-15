@@ -1,12 +1,17 @@
 .navbar {
   background-color: #000000;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 16px 6%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.3s ease;
 }
 
 .navbar a {
@@ -14,19 +19,26 @@
   text-decoration: none;
   padding: 14px 16px;
   display: inline-block;
-  position: relative; /* Add this line to allow absolute positioning of the underline */
+  position: relative;
+   /* Add this line to allow absolute positioning of the underline */
+   transition: transform 0.3s ease;
+
 }
 
 .navbar a::after {
-  content: ""; /* Create an empty pseudo-element */
+  content: ""; 
+  /* Create an empty pseudo-element */
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%; /* Make the underline span the full width of the link */
   height: 2px; /* Set the height of the underline */
-  background-color: #ffffff; /* Set the color of the underline */
-  transform: scaleX(0); /* Initially, the underline has no width (invisible) */
-  transition: transform 0.3s ease; /* Add a transition effect for smooth animation */
+  background-color: #ffffff;
+   /* Set the color of the underline */
+  transform: scaleX(0); 
+  /* Initially, the underline has no width (invisible) */
+  transition: transform 0.3s ease;
+   /* Add a transition effect for smooth animation */
 }
 
 .navbar a:hover::after {
