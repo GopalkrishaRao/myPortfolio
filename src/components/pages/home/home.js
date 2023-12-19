@@ -1,11 +1,10 @@
-import React from 'react'
+import InvertedCursor from "../../ui_components/global_components/Particle/InvertedCursor";
 
-export default function home() {
+export default function Home() {
   return (
     <>
-    <div>home</div>
-    <p>
-"Transforming Ideas into Interactive Experiences - Your Vision, Our Expertise. Crafting Stunning Websites That Speak Your Brand’s Language. Elevate Your Online Presence with Innovative Design and Seamless Functionality. Where Creativity Meets Code – We Build Websites That Wow!"</p>
+    
+<InvertedCursor/>
     </>
   )
 }

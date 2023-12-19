@@ -46,7 +46,8 @@ window.addEventListener('scroll', handleScroll);
     <>
     <nav className="navbar" id='navbar'>
             <div className="navbar-left">
-                <div className="navbar-title">Rao</div>
+                <div className="navbar-title">
+                Rao</div>
             </div>
             <div 
             className="navbar-right">
@@ -72,7 +73,6 @@ window.addEventListener('scroll', handleScroll);
         </span>
     </div>
     </div>
-
     </nav>
     </>
   )
